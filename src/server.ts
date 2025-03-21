@@ -10,7 +10,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:3000",
       "http://192.168.130.84:3000",
-      "https://eat-and-bite-client.vercel.app/",
+      "https://eat-and-bite-client.vercel.app",
     ], // フロントエンドのURL
     methods: ["GET", "POST"],
   },
