@@ -7,7 +7,11 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://192.168.130.84:3000"], // フロントエンドのURL
+    origin: [
+      "http://localhost:3000",
+      "http://192.168.130.84:3000",
+      "https://eat-and-bite-client.vercel.app/",
+    ], // フロントエンドのURL
     methods: ["GET", "POST"],
   },
 });
